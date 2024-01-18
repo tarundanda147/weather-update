@@ -16,7 +16,7 @@ pipeline {
  }
     stage('deploy') {
             steps {
-              sh 'scp -r /home/slave4/workspace/weather-update/target/ root@172.31.9.118:/opt/apache-tomcat-9.0.85/webapps'
+              sh 'scp -r /home/slave4/workspace/weather-update/target/* root@172.31.9.118:/opt/apache-tomcat-9.0.85/webapps'
             }
         }
     }
